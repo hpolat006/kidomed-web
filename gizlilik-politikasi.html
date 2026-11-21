@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kidomed — Gizlilik Politikası</title>
+<style>
+  :root{ --mint:#EEF5F3; --card:#fff; --ink:#12332B; --muted:#5C6B66;
+         --teal:#0F6E56; --tealbg:#CDEBE0; --line:#DCE9E4; --red:#C0392B; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--mint); color:var(--ink);
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        line-height:1.6; }
+  .wrap{ max-width:760px; margin:0 auto; padding:24px 20px 64px; }
+  header{ display:flex; align-items:center; gap:12px; padding:22px 0 8px; }
+  .logo{ width:40px; height:40px; border-radius:12px; background:var(--teal);
+         color:#fff; display:flex; align-items:center; justify-content:center;
+         font-weight:800; font-size:20px; }
+  .brand{ font-weight:800; font-size:22px; color:var(--ink); }
+  .brand span{ color:var(--teal); }
+  h1{ font-size:26px; margin:18px 0 4px; }
+  .date{ color:var(--muted); font-size:14px; margin-bottom:18px; }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:16px;
+         padding:20px 22px; margin:14px 0; }
+  h2{ font-size:18px; color:var(--teal); margin:22px 0 8px; }
+  h3{ font-size:15px; margin:14px 0 4px; }
+  p,li{ font-size:15px; }
+  ul{ padding-left:20px; }
+  a{ color:var(--teal); }
+  .fill{ background:#FFF3CD; border:1px dashed #E0B400; border-radius:6px;
+         padding:1px 6px; font-weight:700; }
+  .note{ font-size:13px; color:var(--muted); }
+  .warn{ border-left:4px solid var(--red); background:#FBEAE7; padding:12px 14px;
+         border-radius:8px; font-size:14px; }
+  footer{ color:var(--muted); font-size:13px; margin-top:28px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">K</div>
+    <div class="brand">Kido<span>med</span></div>
+  </header>
+
+  <h1>Gizlilik Politikası</h1>
+  <div class="date">Son güncelleme: 5 Ağustos 2026</div>
+
+  <div class="card">
+    <p>Kidomed, bebek ve çocuklarda <strong>cilt sıcaklığını</strong> takip eden bir BLE
+    sensörünün mobil uygulamasıdır. Gizliliğine önem veriyoruz. Bu politika, hangi
+    verileri neden işlediğimizi ve haklarını açıklar. Uygulamayı kullanarak bu
+    politikayı kabul etmiş olursun.</p>
+  </div>
+
+  <h2>1. Topladığımız veriler</h2>
+
+  <h3>a) Yalnızca cihazında saklananlar (giriş yapmazsan sunucumuza gitmez)</h3>
+  <ul>
+    <li>Çocuk profilleri (senin girdiğin ad),</li>
+    <li>Sıcaklık ve pil ölçümleri, geçmiş kayıtlar,</li>
+    <li>İlaç kayıtları (ad, doz, saat — senin girdiğin),</li>
+    <li>Notların ve uygulama ayarların (birim, kalibrasyon, alarm tercihleri).</li>
+  </ul>
+
+  <h3>b) Bulut senkron — <em>isteğe bağlı</em>, yalnızca e-posta ile giriş yaparsan</h3>
+  <ul>
+    <li><strong>E-posta adresin ve şifren:</strong> Google Firebase Authentication ile
+        yönetilir. <strong>Şifreni biz göremeyiz ve saklamayız.</strong></li>
+    <li><strong>Uygulama verilerin:</strong> yukarıdaki (a) maddesindeki veriler,
+        hesabınla ilişkili olarak Google Firebase (Firestore) üzerinde saklanır ve
+        senkron açtığın telefonlar arasında eşitlenir.</li>
+    <li><strong>Cihaz bilgisi:</strong> telefon modeli, verdiğin cihaz adı ve rengi,
+        son bağlantı zamanı — çok cihazlı senkronu göstermek için.</li>
+  </ul>
+
+  <h3>c) Kullanım istatistikleri (Firebase Analytics)</h3>
+  <p>Hangi ekranların açıldığı, uygulama başlatma gibi <strong>anonim ve toplu</strong>
+  kullanım verileri — uygulamayı iyileştirmek için. Kişisel kimliğinle
+  ilişkilendirilmez.</p>
+
+  <h3>d) Bluetooth ve konum</h3>
+  <p>Sensöre bağlanıp sıcaklık/pil okumak için Bluetooth kullanılır. Bazı eski Android
+  sürümlerinde Bluetooth taraması için konum izni istenir; <strong>konum verini
+  toplamaz ve saklamayız.</strong></p>
+
+  <h2>2. Verileri nasıl kullanırız</h2>
+  <p>Yalnızca hizmeti sunmak (ölçüm gösterme, ateş alarmı, iki telefon arası senkron)
+  ve uygulamayı iyileştirmek için. <strong>Verini satmayız</strong>, reklam için
+  kullanmayız, üçüncü taraf reklamcılarla paylaşmayız.</p>
+
+  <h2>3. Üçüncü taraf hizmetler</h2>
+  <p>Bulut senkron ve istatistik için Google Firebase (Authentication, Firestore,
+  Analytics) kullanılır; veriler Google altyapısında işlenir. Google'ın gizlilik
+  politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+  <h2>4. Çocukların verisi</h2>
+  <p>Uygulama <strong>ebeveynler ve bakıcılar</strong> tarafından kullanılır; çocuklara
+  yönelik değildir. Çocuğa ait sıcaklık bilgisini ebeveyn girer ve görür. 13 yaş altı
+  kişilerden bilerek veri toplamayız.</p>
+
+  <h2>5. Sağlık verisi ve tıbbi uyarı</h2>
+  <div class="warn">Kidomed bir <strong>tıbbi teşhis aracı değildir.</strong> Cihaz cilt
+  sıcaklığı ölçer; ateş eşikleri iç vücut sıcaklığına göre tanımlıdır ve cilt değeri
+  daha düşük okuyabilir. Kesin ölçüm için termometre kullanın, tıbbi kararlar için
+  doktorunuza danışın.</div>
+
+  <h2>6. Veri saklama ve silme</h2>
+  <ul>
+    <li><strong>Yerel veri:</strong> uygulamayı telefonundan kaldırınca silinir.</li>
+    <li><strong>Bulut veri:</strong> hesabını silene kadar saklanır. Uygulama içinden
+        <em>Ayarlar → Bulut senkron → Hesabı sil</em> ile hesabını ve tüm bulut verini
+        kalıcı olarak silebilirsin. Ayrıntılı yol ve uygulamasız silme talebi:
+        <a href="hesap-silme.html">Hesap ve Veri Silme</a>.</li>
+  </ul>
+
+  <h2>7. Güvenlik</h2>
+  <p>Veriler şifreli bağlantı (HTTPS/TLS) ile aktarılır ve Google Firebase güvenlik
+  kurallarıyla yalnızca hesap sahibinin erişimine kısıtlanır.</p>
+
+  <h2>8. Değişiklikler</h2>
+  <p>Bu politikayı zaman zaman güncelleyebiliriz; güncel tarih en üstte belirtilir.</p>
+
+  <h2>9. İletişim</h2>
+  <p>Sorular ve talepler için:
+     <a href="mailto:info@solarfteknoloji.com">info@solarfteknoloji.com</a></p>
+  <p class="note">Sorumlu (yayıncı): AppSolarf · Uygulama: Kidomed</p>
+
+  <footer>© 2026 Kidomed</footer>
+</div>
+</body>
+</html>

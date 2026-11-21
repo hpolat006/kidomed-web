@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kidomed — Hesap ve Veri Silme</title>
+<style>
+  :root{ --mint:#EEF5F3; --card:#fff; --ink:#12332B; --muted:#5C6B66;
+         --teal:#0F6E56; --tealbg:#CDEBE0; --line:#DCE9E4; --red:#C0392B; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--mint); color:var(--ink);
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        line-height:1.6; }
+  .wrap{ max-width:760px; margin:0 auto; padding:24px 20px 64px; }
+  header{ display:flex; align-items:center; gap:12px; padding:22px 0 8px; }
+  .logo{ width:40px; height:40px; border-radius:12px; background:var(--teal);
+         color:#fff; display:flex; align-items:center; justify-content:center;
+         font-weight:800; font-size:20px; }
+  .brand{ font-weight:800; font-size:22px; color:var(--ink); }
+  .brand span{ color:var(--teal); }
+  h1{ font-size:26px; margin:18px 0 4px; }
+  .date{ color:var(--muted); font-size:14px; margin-bottom:18px; }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:16px;
+         padding:20px 22px; margin:14px 0; }
+  h2{ font-size:18px; color:var(--teal); margin:22px 0 8px; }
+  p,li{ font-size:15px; }
+  ol,ul{ padding-left:20px; }
+  ol li{ margin:6px 0; }
+  a{ color:var(--teal); }
+  .fill{ background:#FFF3CD; border:1px dashed #E0B400; border-radius:6px;
+         padding:1px 6px; font-weight:700; }
+  .steps{ background:var(--tealbg); border-radius:12px; padding:14px 18px; }
+  .pill{ display:inline-block; background:var(--tealbg); color:var(--teal);
+         border-radius:999px; padding:2px 10px; font-size:13px; font-weight:700; }
+  .note{ font-size:13px; color:var(--muted); }
+  .kv{ display:flex; gap:10px; margin:6px 0; }
+  .kv b{ min-width:120px; }
+  footer{ color:var(--muted); font-size:13px; margin-top:28px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">K</div>
+    <div class="brand">Kido<span>med</span></div>
+  </header>
+
+  <h1>Hesap ve Veri Silme</h1>
+  <div class="date">Son güncelleme: 5 Ağustos 2026</div>
+
+  <div class="card">
+    <p>Kidomed <strong>bulut senkron hesabını</strong> ve buluttaki tüm verini kalıcı
+    olarak silebilirsin. Aşağıda iki yöntem var. Bulut senkron isteğe bağlıdır; hiç
+    giriş yapmadıysan buluta yazılmış verin yoktur.</p>
+  </div>
+
+  <h2>Yöntem 1 — Uygulama içinden <span class="pill">önerilen</span></h2>
+  <div class="steps">
+    <ol>
+      <li>Kidomed uygulamasını aç.</li>
+      <li><strong>Ayarlar</strong> sekmesine git.</li>
+      <li><strong>Bulut senkron</strong> kartında <strong>“Hesabı sil”</strong>e dokun.</li>
+      <li>Uyarıyı oku, <strong>hesap şifreni</strong> gir ve onayla.</li>
+    </ol>
+  </div>
+  <p class="note">Şifre, kimliğini doğrulamak için istenir (yanlışlıkla silmeyi önler).
+  Şifreni unuttuysan giriş ekranındaki “Şifremi unuttum” ile sıfırlayabilirsin.</p>
+
+  <h2>Yöntem 2 — Uygulamaya erişemiyorsan</h2>
+  <p>Telefonun yoksa veya uygulamaya giremiyorsan, <strong>hesabının e-posta
+  adresinden</strong> aşağıdaki adrese “hesap silme” talebi gönder; talebini
+  doğrulayıp hesabını ve tüm bulut verini sileriz.</p>
+  <p>Silme talebi: <a href="mailto:info@solarfteknoloji.com">info@solarfteknoloji.com</a></p>
+  <p class="note">Talepler en geç <strong>30 gün</strong> içinde işleme alınır
+  (genellikle çok daha hızlı).</p>
+
+  <h2>Ne silinir?</h2>
+  <div class="card">
+    <div class="kv"><b>Silinen:</b><span>Bulut hesabın (e-posta girişi) ve buluttaki
+      tüm verin — çocuk profilleri, sıcaklık ölçümleri, ilaç kayıtları, notlar ve
+      cihaz kayıtları. Bu işlem geri alınamaz.</span></div>
+    <div class="kv"><b>Kalan:</b><span>Yalnızca o an kullandığın telefondaki yerel
+      veriler kalır; uygulama yerel modda çalışmaya devam eder. Onları da silmek için
+      uygulamayı telefondan kaldırman yeterli.</span></div>
+  </div>
+
+  <div class="card">
+    <p><strong>Not:</strong> “Çıkış yap” ile “Hesabı sil” farklıdır. <em>Çıkış yap</em>
+    yalnızca bu telefonu senkrondan ayırır; verin bulutta kalır. <em>Hesabı sil</em>
+    ise hesabını ve tüm bulut verini kalıcı olarak kaldırır.</p>
+  </div>
+
+  <p class="note">Ayrıntılar için <a href="gizlilik-politikasi.html">Gizlilik
+  Politikası</a>. İletişim: <a href="mailto:info@solarfteknoloji.com">info@solarfteknoloji.com</a> ·
+  Sorumlu (yayıncı): AppSolarf</p>
+
+  <footer>© 2026 Kidomed</footer>
+</div>
+</body>
+</html>
